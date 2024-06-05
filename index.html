@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="website portfolio">
+    <meta name="author" content="hizkia harianja">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- =========== Header =========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Hizkia</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li>
+                        <a href="#home" class="nav_link active-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#info" class="nav_link">My Info</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav_link">Contact me</a>
+                    </li>
+                </ul>
+
+                <div class="nav_close" id="nav-close"><i class="ri-close-large-line"></i></div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav_toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <img src="img/freshgradute.jpeg" alt="web developer" class="home_img">
+
+                <div class="home_data">
+                    <h1 class="home_name">Hizkia</h1>
+                    <h3 class="home_profession">Fresh Graduate</h3>
+                </div>
+
+                <a href="#info" class="home_scroll">
+                    <div class="home_scroll-box">
+                        <i class="ri-arrow-down-line"></i>
+                    </div>
+                    <span class="home_scroll-text">More Info</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="info section" id="info">
+            <h2 class="section_title">TENTANG</h2>
+
+            <div class="info_container container grid">
+                <div class="about grid">
+                    <div class="about_content">
+                        <h3 class="info_title">About Me</h3>
+                        <p class="about_description">
+                            Saya adalah lulusan S1 teknik informatika dengan minat dalam pengembangan 
+                            web dan pengelolaan data. Selama kuliah, saya telah mengerjakan berbagai 
+                            proyek menggunakan HTML, CSS. Saya juga memiliki pengalaman dalam mengelola 
+                            data di database dan menampilkannya di website. Selain itu, saya telah mengikuti 
+                            kursus fundamental software engineering dan mini course data analytics. 
+                            Saya memiliki keinginan yang kuat untuk belajar dan berkembang, serta siap untuk 
+                            memberikan kontribusi yang positif di lingkungan kerja.
+                        </p>
+                        <a href="Hizkia-CV.pdf" download="" target="_blank" class="button about_button">Download CV</a>
+                    </div>
+                    <img src="img/myinfofoto.jpeg" alt="image" class="about_img">
+                </div>
+                <div class="experience">
+                    <h3 class="info_tit">Experience</h3>
+                    <div class="experience_content grid">
+                        <div class="experience_data grid">
+                            <h2 class="experience_company">Universitas Indraprasta PGRI</h2>
+                            <div>
+                                <h3 class="experience_profession">Project Kuliah</h3>
+                                <span class="experience_date">2022</span>
+                                <p class="experience_description">Membuat sistem pakar klasifikasi sepeda
+                                    motor berbasis website, saya bertanggung jawab menambahkan data ke database dan menampilkannya ke tampilan website.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience_data grid">
+                            <h2 class="experience_company">RevoU</h2>
+                            <div>
+                                <h3 class="experience_profession">Fundamental Course Software Engineering</h3>
+                                <span class="experience_date">2023</span>
+                                <p class="experience_description">Mengerjakan project membuat website kalkulator matematik (Luas dan keliling segitiga dan Luas dan keliling jajar genjang)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3 class="info_title">Skills</h3>
+                    <div class="skills_content grid">
+                        <div class="skills_box">
+                            <img src="img/html-1.svg" alt="html" class="skills_img">
+                            <span class="skills_name">HTML</span>
+                        </div>
+                        <div class="skills_box">
+                            <img src="img/css-3.svg" alt="html" class="skills_img">
+                            <span class="skills_name">CSS</span>
+                        </div>
+                        <div class="skills_box">
+                            <img src="img/javascript.svg" alt="html" class="skills_img">
+                            <span class="skills_name">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section_title">CONTACT ME</h2>
+            <div class="contact_container container grid">
+                <form action="" class="contact_form grid" id="contact-form">
+                    <div class="contact_group grid">
+                        <input type="text" name="user_name" placeholder="Nama" required class="contact_input">
+                        <input type="email" name="user_email" placeholder="Email" required class="contact_input">
+                    </div>
+                    <textarea name="user_message" placeholder="Pesan" required class="contact_input contact_area"></textarea>
+                    <button type="submit" class="button contact_button">Kirim Pesan</button>
+                    <p class="contact_message" id="contact-message">Pesan</p>
+                </form>
+                <div class="contact_social grid">
+                    <a href="https://www.linkedin.com/in/hizkia-harianja-868b02248/" target="_blank" class="contact_social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hizkia____.114/" target="_blank" class="contact_social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://github.com/HizkiaHarianja" target="_blank" class="contact_social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container container grid">
+            <ul class="footer_links">
+                <li>
+                    <a href="#home" class="footer_link">Home</a>
+                </li>
+                <li>
+                    <a href="#info" class="footer_link">Info</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer_link">Contact</a>
+                </li>
+            </ul>
+            <span class="footer_copy">&#169; All Rights Reserved By Hizkia</span>
+        </div>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>  
+</body>
+</html>
